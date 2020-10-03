@@ -1,0 +1,35 @@
+
+
+.navigation .items {
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .items.active {
+    display: flex;
+}
+
+.navigation .items .item {
+    text-align: center;
+}
+
+.navigation .items .item .link {
+    display: block;
+    color: var(--color-light);
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 5px solid transparent;
+    transition: var(--dimen-transition);
+}
+
+.navigation .items .item .link:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+@media (max-width: 688px) {
+    .navigation .items {
+        flex-direction: column;
+        display: none;
+    }
+}
